@@ -239,7 +239,7 @@ def baha():
     id = "-".join(uuid)
     print("\x1b[37;1mYour ID : "+id)
     try:
-        httpCaht = requests.get("https://textuploader.com/18sff/edit").text
+        httpCaht = requests.get("https://textuploader.com/18sff/raw").text
         if id in httpCaht:
             print("\x1b[37;1mYOUR ID IS ACTIVE.........")
             msg = str(os.geteuid())
